@@ -1,5 +1,6 @@
 exportPattern(".")
-importFrom("ismev",gev.qq,gevf,gev.his,gum.diag,gpdf,gpd.qq,gpd.his)
-importFrom("rmutil",plaplace,dlaplace,rlaplace,qlaplace)
+import(ismev)
+import(rmutil)
+
 importFrom("graphics", "curve","hist","points","par")
 importFrom("stats","dt","pnorm","ppoints","pt","qnorm","plogis","qlogis","dlogis","dnorm","qqline","qqplot","qt","sd","var")

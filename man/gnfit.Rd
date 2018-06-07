@@ -5,11 +5,11 @@
 Computes the test statistic and p-value of the Cramer-von Mises and Anderson-Darling test for some continuous distribution functions proposed by Chen and Balakrishnan (1995). In addition to our classic distribution functions here, we calculate the Goodness of Fit (GoF) test to dataset which follows the extreme value distribution function, without remembering the formula of distribution/density functions.
 }
 
-\usage{gnfit(dat, dist, df = 3, pr = NULL, threshold = NULL)}
+\usage{gnfit(dat, dist, df = NULL, pr = NULL, threshold = NULL)}
 \arguments{
    \item{dat}{A numeric vector of data values.}
    \item{dist}{A named distribution function in R, such as "norm", "t", "laplace", "logis", "gev", "gum", "gpd".}
-    \item{df}{Degrees of freedom (> 2) for Student-t's distribution. This value is set to 3 by default.}
+    \item{df}{Degrees of freedom (> 2) for Student-t's distribution. This value is set to NULL by default.}
     \item{pr}{An object returned by maximum likelihood estimation of \href{https://CRAN.R-project.org/package=ismev}{gev.fit}, \href{https://CRAN.R-project.org/package=ismev}{gum.fit} or \href{https://CRAN.R-project.org/package=ismev}{gpd.fit}. It is also numeric vector giving the maximum likelihood estimation for the nonstationary model with location, scale and shape parameters for "gev" (generalized extreme value distribution), location and scale parameters in gumbel distribution or scale and shape parameters in case of "gpd" (generalized pareto distribution), resp.}
     \item{threshold}{The threshold is a single number. It is allocated by "gpd" with shape and scale parameters.}
 }

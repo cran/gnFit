@@ -1,5 +1,5 @@
-gnfit<-function(dat, dist, df=3, pr=NULL, threshold=NULL){
-
+gnfit<-function(dat, dist, df=NULL, pr=NULL, threshold=NULL){
+dat<-as.numeric(dat)
 x<-NULL
 z<-list()
 
